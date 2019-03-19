@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Item from "./Item";
+import Items from "./Items";
 
 class Portfolio extends Component {
   render() {
@@ -19,27 +19,7 @@ class Portfolio extends Component {
             </p>
             <hr />
             <div className="row">
-              <Item
-                img="https://via.placeholder.com/600x450"
-                title="Item 1"
-                tech="React"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              placerat mauris sed massa vehicula lobortis."
-              />
-              <Item
-                img="https://via.placeholder.com/600x450"
-                title="Item 2"
-                tech="Ruby on Rails"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              placerat mauris sed massa vehicula lobortis."
-              />
-              <Item
-                img="https://via.placeholder.com/600x450"
-                title="Item 3"
-                tech="JavaScript"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              placerat mauris sed massa vehicula lobortis."
-              />
+              <Items />
             </div>
           </main>
         </div>
