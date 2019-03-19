@@ -8,35 +8,40 @@ import IconButton from "@material-ui/core/IconButton";
 class Header extends Component {
   render() {
     return (
-      <div className="navbar navbar-expand-md navbar-light bg-light">
-        <a href="#" className="navbar-brand">
+      <div class="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" class="navbar-brand">
           Graham Cottridge
         </a>
         <button
           type="button"
-          className="navbar-toggler"
+          class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarUnorderedList"
           aria-controls="navbarUnorderedList"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon" />
+          <span class="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarUnorderedList">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a href="#" className="nav-link active">
-                Home <span className="sr-only">(current)</span>
+        <div class="collapse navbar-collapse" id="navbarUnorderedList">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">
+                Home <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
                 About
               </a>
             </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">
                 Portfolio
               </a>
             </li>

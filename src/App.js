@@ -4,7 +4,7 @@ import "./resources/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/header_footer/Header";
-import Card from "./components/portfolio/Card";
+import Portfolio from "./components/portfolio/Portfolio";
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
         <div className="container">
           <Header />
         </div>
-        <Card />
+        <Portfolio />
       </div>
     );
   }
