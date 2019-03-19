@@ -6,10 +6,10 @@ class Portfolio extends Component {
   render() {
     return (
       <div>
-        <div class="container">
+        <div className="container">
           <main>
-            <h1 class="display-4 text-center">Portfolio</h1>
-            <p class="lead">
+            <h1 className="display-4 text-center">Portfolio</h1>
+            <p className="lead">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               placerat mauris sed massa vehicula lobortis. Fusce at justo ante.
               Morbi mollis urna a luctus efficitur. Aenean consectetur ipsum nec
@@ -18,10 +18,28 @@ class Portfolio extends Component {
               orci. Aenean eu mattis quam.
             </p>
             <hr />
-            <div class="row">
-              <Item />
-              <Item />
-              <Item />
+            <div className="row">
+              <Item
+                img="https://via.placeholder.com/600x450"
+                title="Item 1"
+                tech="React"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              placerat mauris sed massa vehicula lobortis."
+              />
+              <Item
+                img="https://via.placeholder.com/600x450"
+                title="Item 2"
+                tech="Ruby on Rails"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              placerat mauris sed massa vehicula lobortis."
+              />
+              <Item
+                img="https://via.placeholder.com/600x450"
+                title="Item 3"
+                tech="JavaScript"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              placerat mauris sed massa vehicula lobortis."
+              />
             </div>
           </main>
         </div>

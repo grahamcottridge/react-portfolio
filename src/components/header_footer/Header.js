@@ -8,40 +8,40 @@ import IconButton from "@material-ui/core/IconButton";
 class Header extends Component {
   render() {
     return (
-      <div class="navbar navbar-expand-md navbar-light bg-light">
-        <a href="#" class="navbar-brand">
+      <div className="navbar navbar-expand-md navbar-light bg-light">
+        <a href="#" className="navbar-brand">
           Graham Cottridge
         </a>
         <button
           type="button"
-          class="navbar-toggler"
+          className="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarUnorderedList"
           aria-controls="navbarUnorderedList"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="collapse navbar-collapse" id="navbarUnorderedList">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">
-                Home <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarUnorderedList">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a href="#" className="nav-link active">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li className="nav-item">
+              <a href="#" className="nav-link">
                 About
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
+            <li className="nav-item">
+              <a href="#" className="nav-link">
                 Contact
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link disabled">
+            <li className="nav-item">
+              <a href="#" className="nav-link disabled">
                 Portfolio
               </a>
             </li>

@@ -1,26 +1,25 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Item extends Component {
   render() {
+    const { img, title, tech, description } = this.props;
     return (
       <div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <figure class="figure">
+        <div className="col-12 col-md-6 col-lg-4">
+          <figure className="figure">
             <a href="#">
               <img
-                src="https://via.placeholder.com/600x450"
-                class="figure-img img-fluid img-thumbnail"
-                alt="Figure image"
+                src={img}
+                className="figure-img img-fluid img-thumbnail"
+                alt=""
               />
             </a>
-            <figcaption class="figure-caption">
+            <figcaption className="figure-caption">
               <h6>
-                Item <small>(React)</small>
+                {title} <small>({tech})</small>
               </h6>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                laoreet pellentesque lorem sed elementum.
-              </p>
+              <p>{description}</p>
             </figcaption>
           </figure>
         </div>
@@ -28,5 +27,12 @@ class Item extends Component {
     );
   }
 }
+
+Item.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
 
 export default Item;
