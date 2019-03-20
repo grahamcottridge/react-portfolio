@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 class Item extends Component {
   render() {
-    const { img, title, tech, description } = this.props;
+    const { img, title, tech, description } = this.props.item;
     return (
       <div>
         <div className="col-12 col-md-6 col-lg-4">
@@ -29,10 +29,7 @@ class Item extends Component {
 }
 
 Item.propTypes = {
-  img: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  tech: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  item: PropTypes.object.isRequired
 };
 
 export default Item;
