@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
-
 class Header extends Component {
+  state = {
+    navCollapsed: true
+  };
+
+  onToggleNav = () => {
+    this.setState({ navCollapsed: !this.state.navCollapsed });
+  };
+
   render() {
+    const { navCollapsed } = this.state;
     return (
       <div className="navbar navbar-expand-md navbar-light bg-light">
         <a href="#" className="navbar-brand">
@@ -20,10 +24,12 @@ class Header extends Component {
           aria-controls="navbarUnorderedList"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={this.onToggleNav}
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className="collapse navbar-collapse" id="navbarUnorderedList">
+
+        <div className={(navCollapsed ? "collapse" : "") + " navbar-collapse"}>
           <ul className="navbar-nav">
             <li className="nav-item">
               <a href="#" className="nav-link active">
@@ -48,30 +54,6 @@ class Header extends Component {
           </ul>
         </div>
       </div>
-
-      // <AppBar
-      //   position="fixed"
-      //   style={{
-      //     backgroundColor: "#2f2f2f",
-      //     boxShadow: "none",
-      //     padding: "10px 0px"
-      //   }}
-      // >
-      //   <Toolbar>
-      //     <div className="header-logo">
-      //       <div className="font-name header-logo-venue">Graham Cottridge</div>
-      //       <div className="header-logo-title">Web Developer</div>
-      //     </div>
-
-      //     <IconButton
-      //       aria-label="Menu"
-      //       color="inherit"
-      //       onClick={() => console.log("open")}
-      //     >
-      //       <MenuIcon />
-      //     </IconButton>
-      //   </Toolbar>
-      // </AppBar>
     );
   }
 }
