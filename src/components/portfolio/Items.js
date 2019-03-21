@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "reactstrap";
+
 import Item from "./Item";
 
 class Items extends Component {
@@ -31,11 +33,11 @@ class Items extends Component {
   render() {
     const { items } = this.state;
     return (
-      <div>
+      <Row>
         {items.map(item => (
           <Item key={item.id} item={item} />
         ))}
-      </div>
+      </Row>
     );
   }
 }
