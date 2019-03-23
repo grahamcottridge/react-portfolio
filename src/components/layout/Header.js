@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   state = {
@@ -32,24 +33,24 @@ class Header extends Component {
         <div className={(navCollapsed ? "collapse" : "") + " navbar-collapse"}>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a href="#" className="nav-link active">
+              <Link to="/" className="nav-link">
                 Home <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/about" className="nav-link">
                 About
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">
+              <Link to="/contact" className="nav-link">
                 Contact
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link disabled">
+              <Link to="/portfolio" className="nav-link">
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
