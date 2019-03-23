@@ -9,6 +9,7 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
+import NotFound from "./components/pages/NotFound§";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
               <Route exact path="/about" component={About} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/portfolio" component={Portfolio} />
+              <Route component={NotFound} />
             </Switch>
           </div>
         </div>
