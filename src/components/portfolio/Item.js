@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 class Item extends Component {
@@ -18,6 +19,11 @@ class Item extends Component {
           <figcaption className="figure-caption">
             <h6>
               {title} <small>({tech})</small>
+            </h6>
+            <h6>
+              <a href="#" target="_blank">
+                Link
+              </a>
             </h6>
             <p>{description}</p>
           </figcaption>

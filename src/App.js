@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import "./resources/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Header from "./components/layout/Header";
@@ -9,7 +8,7 @@ import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Portfolio from "./components/portfolio/Portfolio";
-import NotFound from "./components/pages/NotFound§";
+import NotFound from "./components/pages/NotFound";
 
 class App extends Component {
   render() {
