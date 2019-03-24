@@ -1,17 +1,43 @@
-// colors
+//FONTS
+// Import Google fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
-// Color system
+// Define fonts for body and headers
+$body-font: "Open Sans", "Helvetica", "sans-serif";
+$headers-font: "Raleway", "Helvetica", "sans-serif";
 
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+// COLORS
+// Define variables for your color scheme
+$red: #fd1015;
+$blue: #167ffb;
+$yellow: #ffc65a;
+$orange: #e67e22;
+$green: #1edd88;
+$gray: #0e0000;
+$light-gray: #f4f4f4;
+
+// This is where you override default Bootstrap variables
+// Defined with default value (see https://robots.thoughtbot.com/sass-default)
+
+// General style
+$font-family-sans-serif: $body-font;
+$headings-font-family: $headers-font;
+$body-bg: $light-gray;
+$font-size-base: 1rem;
+
+// Colors
+$gray-base: $gray;
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-info: $yellow;
+$brand-danger: $red;
+$brand-warning: $orange;
+
+// Buttons & inputs' radius
+$border-radius-base: 4px;
+$border-radius-large: 4px;
+$border-radius-small: 4px;
+
+// Override other variables below!
 
 @import "~bootstrap/scss/bootstrap.scss";
