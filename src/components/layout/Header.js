@@ -13,7 +13,7 @@ class Header extends Component {
   render() {
     const { navCollapsed } = this.state;
     return (
-      <div className="navbar navbar-expand-md navbar-light bg-light mb-3">
+      <div className="navbar navbar-expand-md navbar-dark bg-primary mb-3">
         <a href="#" className="navbar-brand">
           Graham Cottridge
         </a>

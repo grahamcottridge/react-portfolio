@@ -1,9 +1,9 @@
 //FONTS
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:500");
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
+$body-font: "Lato", "Helvetica", "sans-serif";
 $headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // COLORS
@@ -15,6 +15,8 @@ $orange: #e67e22;
 $green: #1edd88;
 $gray: #0e0000;
 $light-gray: #f4f4f4;
+$light: #ffc65a;
+$dark: #167ffb;
 
 // This is where you override default Bootstrap variables
 // Defined with default value (see https://robots.thoughtbot.com/sass-default)
@@ -32,6 +34,8 @@ $brand-success: $green;
 $brand-info: $yellow;
 $brand-danger: $red;
 $brand-warning: $orange;
+$light: $light;
+$dark: $dark;
 
 // Buttons & inputs' radius
 $border-radius-base: 4px;
@@ -39,5 +43,8 @@ $border-radius-large: 4px;
 $border-radius-small: 4px;
 
 // Override other variables below!
+// Font colors
+// $headings-color: white;
+// $body-color: red;
 
 @import "~bootstrap/scss/bootstrap.scss";
