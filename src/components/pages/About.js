@@ -6,7 +6,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container mt-3">
       <div className="card">
         <div className="card-body">
           <h4 className="card-title">About Me</h4>
@@ -16,9 +16,11 @@ const About = () => {
               <Image src={graham} fluid />
               <br />
               <p className="card-text mt-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                laoreet pellentesque lorem sed elementum. Suspendisse maximus
-                convallis ex. Etiam eleifend velit leo.
+                I'm a recent graduate of Le Wagon coding bootcamp — a start-up
+                focused, 9-week intensive coding boot camp. Since then, I have
+                continued to consolidate my skills and learn new ones including
+                React. I’m quick-to-learn, love to solve problems and many of my
+                skills are self-taught.
               </p>
             </Col>
             <Col>

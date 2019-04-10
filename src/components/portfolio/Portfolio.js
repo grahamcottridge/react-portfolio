@@ -7,7 +7,7 @@ import Items from "./Items";
 class Portfolio extends Component {
   render() {
     return (
-      <Container>
+      <Container className="mt-3">
         <main>
           <h1 className="mb-sm-4 text-center">Portfolio</h1>
           <p className="lead text-center">A work in progress.</p>

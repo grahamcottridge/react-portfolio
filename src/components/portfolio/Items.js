@@ -11,7 +11,8 @@ class Items extends Component {
         title: "Item 1",
         img: require("../../resources/music_event.jpg"),
         tech: "React",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         link: "http://striped-love.surge.sh/"
       },
       {
@@ -19,7 +20,8 @@ class Items extends Component {
         title: "Item 2",
         img: "https://via.placeholder.com/600x450",
         tech: "Ruby",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         link: ""
       },
       {

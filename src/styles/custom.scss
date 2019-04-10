@@ -1,10 +1,10 @@
 //FONTS
 // Import Google fonts
-@import url("https://fonts.googleapis.com/css?family=Lato|Raleway:500");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Fira+Sans");
 
 // Define fonts for body and headers
-$body-font: "Lato", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+$body-font: "Fira Sans", "Helvetica", "sans-serif";
+$headers-font: "Bree Serif", "Helvetica", "sans-serif";
 
 // COLORS
 // Define variables for your color scheme
@@ -15,7 +15,7 @@ $orange: #e67e22;
 $green: #1edd88;
 $gray: #0e0000;
 $light-gray: #f4f4f4;
-$light: #ffc65a;
+$light: white;
 $dark: #167ffb;
 
 // This is where you override default Bootstrap variables
@@ -42,7 +42,7 @@ $border-radius-base: 4px;
 $border-radius-large: 4px;
 $border-radius-small: 4px;
 
-// Override other variables below!
+// overrideother variables below!
 // Font colors
 // $headings-color: white;
 // $body-color: red;
